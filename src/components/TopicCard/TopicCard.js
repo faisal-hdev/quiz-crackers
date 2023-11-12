@@ -3,7 +3,7 @@ import React from "react";
 const TopicCard = ({ topic }) => {
   const { name, logo } = topic;
   return (
-    <div className="card card-compact w-96 bg-base-100 shadow-xl">
+    <div className="card card-compact w-72 bg-base-100 shadow-xl">
       <figure>
         <img src={logo} alt="Shoes" />
       </figure>
