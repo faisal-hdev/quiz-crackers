@@ -8,9 +8,11 @@ const TopicCard = ({ topic }) => {
         <img src={logo} alt="Shoes" />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{name}</h2>
-        <div className="card-actions justify-center">
-          <button className="btn">Start Practice</button>
+        <h2 className="card-title justify-center">{name}</h2>
+        <div className="card-actions justify-center mt-4 mb-4">
+          <button className="btn rounded-3xl bg-blue-200">
+            Start Practice
+          </button>
         </div>
       </div>
     </div>
