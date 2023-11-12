@@ -18,7 +18,7 @@ const TopicsHeader = () => {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <button className="btn glass">Glass button</button>
+          <button className="btn btn-wide glass">Get_s Started</button>
         </div>
       </div>
     </div>

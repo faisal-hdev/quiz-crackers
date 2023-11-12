@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="text-2xl flex justify-evenly bg-slate-200">
-      <div className="navbar container bg-slate-200">
+    <nav className="text-2xl flex justify-evenly bg-yellow-200">
+      <div className="navbar container bg-yellow-200">
         <div className="flex-1">
           <a href="/" className="btn btn-ghost normal-case  text-2xl">
             Quiz Cracker_
