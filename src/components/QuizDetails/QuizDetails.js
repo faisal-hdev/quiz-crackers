@@ -7,7 +7,6 @@ const QuizDetails = () => {
   const data = quiz.data;
   const { name } = data;
   const questions = data.questions;
-  console.log(questions);
   return (
     <div>
       <h2 className="text-4xl mt-16">Quiz of {name}</h2>

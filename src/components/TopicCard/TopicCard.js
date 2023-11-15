@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { FaAngleDoubleRight } from "react-icons/fa";
 
 const TopicCard = ({ topic }) => {
   const { id, name, logo } = topic;
@@ -22,6 +23,7 @@ const TopicCard = ({ topic }) => {
             className="btn border-b-2 border-indigo-500 rounded-3xl"
           >
             Start Practice
+            <FaAngleDoubleRight />
           </button>
         </div>
       </div>
