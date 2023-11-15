@@ -4,12 +4,14 @@ import Main from "./components/Layouts/Main";
 import Topics from "./components/Topics/Topics";
 import Statistics from "./components/Statistics/Statistics";
 import Blog from "./components/Blog/Blog";
+import About from "./components/About/About";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Main></Main>,
+      errorElement: <About></About>,
       children: [
         {
           path: "/",
@@ -17,6 +19,7 @@ function App() {
           element: <Topics></Topics>,
         },
         { path: "/statistics", element: <Statistics></Statistics> },
+        { path: "/about", element: <About></About> },
         { path: "/blog", element: <Blog></Blog> },
       ],
     },

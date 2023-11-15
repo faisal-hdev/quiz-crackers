@@ -3,7 +3,9 @@ import React from "react";
 const Blog = () => {
   return (
     <div>
-      <h2>Three type of Blog</h2>
+      <section>01</section>
+      <section>02</section>
+      <section>03</section>
     </div>
   );
 };

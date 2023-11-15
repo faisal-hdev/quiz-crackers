@@ -12,11 +12,10 @@ const TopicsHeader = () => {
       <div className="hero-overlay bg-opacity-50 rounded-b-3xl"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-          <p className="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+          <h1 className="mb-5 text-5xl font-bold text-white">Hello there</h1>
+          <p className="mb-5 font-medium text-xl text-white">
+            Certainly! Creating a text-based quiz can be a fun and engaging way
+            to test knowledge. Here are some of Topic-based quizzes...
           </p>
           <button className="btn btn-wide glass">Get_s Started</button>
         </div>
