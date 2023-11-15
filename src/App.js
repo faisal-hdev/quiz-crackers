@@ -25,7 +25,6 @@ function App() {
         {
           path: "/quizDetails/:quizId",
           loader: async ({ params }) => {
-            // console.log(params.quizId);
             return fetch(
               `https://openapi.programming-hero.com/api/quiz/${params.quizId}`
             );

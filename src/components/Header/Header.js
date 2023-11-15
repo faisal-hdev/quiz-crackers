@@ -1,7 +1,37 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "./Header.css";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  const navLinks = (
+    <>
+      <li className="text-xl">
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : undefined)}
+          to="/"
+        >
+          Topics
+        </NavLink>
+      </li>
+      <li className="text-xl">
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : undefined)}
+          to="/statistics"
+        >
+          Statistics
+        </NavLink>
+      </li>
+
+      <li className="text-xl">
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : undefined)}
+          to="/about"
+        >
+          About
+        </NavLink>
+      </li>
+    </>
+  );
   return (
     <nav className="bg-yellow-200">
       <div className="navbar container mx-auto bg-yellow-200">
@@ -11,28 +41,15 @@ const Header = () => {
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li className="text-xl">
-              <Link to="/">Topics</Link>
-            </li>
-            <li className="text-xl">
-              <Link to="/statistics">Statistics</Link>
-            </li>
-            {/* <li className="text-xl">
-              <Link to="/blog">Blog</Link>
-            </li> */}
-            <li className="text-xl">
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
+          <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <Link
+          <NavLink
             className="btn max-sm:hidden border-b-2 border-indigo-500 rounded-3xl"
             to="/blog"
           >
             Blog Here
-          </Link>
+          </NavLink>
           <div className="dropdown dropdown-left dropdown-bottom">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -54,18 +71,7 @@ const Header = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box"
             >
-              <li className="text-xl">
-                <Link to="/">Topics</Link>
-              </li>
-              <li className="text-xl">
-                <Link to="/statistics">Statistics</Link>
-              </li>
-              {/* <li className="text-xl">
-                <Link to="/blog">Blog</Link>
-              </li> */}
-              <li className="text-xl">
-                <Link to="/about">About</Link>
-              </li>
+              {navLinks}
             </ul>
           </div>
         </div>
